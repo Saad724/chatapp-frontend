@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+$primaryColor: #e79c39;
+$secondaryColor: #f0e227;
+$themeHelperColor: #62c089;
+
+:export{
+    primaryColor: $primaryColor;
+    secondaryColor: $secondaryColor;
+    themeHelperColor: $themeHelperColor;
+}

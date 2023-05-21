@@ -1,0 +1,221 @@
+@import '@/styles/theme.module.scss';
+
+.navbarContainer {
+    background-color: #f9f9f9;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.footerContainer {
+    background-color: #f9f9f9;
+    padding-top: 50px;
+}
+
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBarScroll {
+    box-shadow: 0 1px 15px -5px #e94057;
+}
+
+.navRightLinks {
+    align-items: center;
+}
+
+.navRightLinks a {
+    margin-left: 30px;
+}
+
+.bannerBox {
+    text-align: center;
+    // background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/banner.webp');
+    background-image: url('../assets/images/banner.png');
+    background-size: cover;
+    height: 40rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbarAuthButton {
+    width: 100px;
+    padding: 8px;
+}
+
+.findMatchStack {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 50px;
+    width: 50%;
+}
+
+.findMatchFieldBox {}
+
+.findMatchFields {
+    width: 20px;
+    background-color: #fff;
+}
+
+.gradientBox {
+    background: linear-gradient(320deg, $themeHelperColor, $primaryColor, $secondaryColor);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 547px) {
+    .mainHeadingStack {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .mainSubheading {
+        font-size: 25px;
+    }
+}
+
+.flowStack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.flowStack svg {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.flowStack div {
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.sectionBox {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.serviceCard {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $primaryColor;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+        background-color: $secondaryColor;
+        transition: 0.2s ease-in-out;
+    }
+}
+
+.featuredPostsImage p {
+    color: #fff;
+}
+
+.featuredPostsImage {
+    background-size: auto;
+    padding: 30px 20px;
+    height: inherit;
+    width: inherit;
+    justify-content: flex-end;
+    cursor: pointer;
+    border-radius: 15px;
+    background-repeat: no-repeat !important;
+    // background: linear-gradient(to bottom, rgba( $primaryColor, 0.7 ), rgba($secondaryColor, 0.7) ), url('https://wpocean.com/html/tf/loveme/assets/images/blog/img-3.jpg') center;
+    // background: linear-gradient(to bottom, rgba(#000, 0.2), rgba(#000, 0.7)), url("https://media.weddingz.in/images/16ab8276a8bfa26550f679e8e6963687/best-wedding-reception-halls-in-patna-you-will-absolutely-fall-in-love-with.jpg");
+    background-position: center !important;
+
+    &:hover {
+        transition: 0.2s ease-in-out;
+        transform: scale(1.09);
+    }
+}
+
+.featuredPostsText{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    color: #fff
+}
+
+.featuredPostsContainer {
+    height: 180px;
+    width: 180px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+    .featuredPostsContainer {
+        height: 300px;
+    }
+}
+
+.gradientSectionSec {
+    background: url('../assets/images/banner2.jpg');
+    // background: linear-gradient(to bottom, rgba( $primaryColor, 0.2 ), rgba($secondaryColor, 0.2) ), url('../assets/images/banner_without_bg.png') center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.aimSectionImage {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.imageBox {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 99%;
+    width: 100%;
+    opacity: 0.3;
+    transition: .5s ease;
+    background-color: #000;
+    border-radius: 20px;
+}
+
+.aimTextBox{
+    max-width: 500px;
+}
+
+.aimBoxButton{
+    max-width: 200px;
+    color: #fff;
+    border-color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    &:hover {
+        background-color: $primaryColor;
+    }
+}

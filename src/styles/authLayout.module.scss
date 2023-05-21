@@ -1,0 +1,20 @@
+@import '@/styles/theme.module.scss';
+
+.mainContainer {
+    height: 100vh;
+    background: linear-gradient(320deg, $themeHelperColor, $primaryColor, $secondaryColor);
+}
+
+@media screen and (max-width: 900px) {
+    .mainContainer {
+        background: #fff;
+    }
+}
+
+.authLayoutImage{
+    border-radius: 20px;
+    max-width: 700px;
+    width: 80%;
+    height: auto;
+    min-width: 400px;
+}
